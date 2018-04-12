@@ -1,0 +1,207 @@
+:root{
+    font-size: 16px;
+    font-family: serif;
+}
+
+body,html{
+    height: 100%;  
+}
+
+.container{
+    height: 100%; 
+    background-image: url(img/bg-image.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container .bg-image-text h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 4em;
+}
+
+.container .bg-image-text h2{
+    color: aliceblue;
+    text-align: center;
+    font-size: 3em;
+    
+}
+
+.container .bg-image-text p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+
+
+
+@media only screen and (max-width : 768px){
+    
+    .container{
+        width:100%;
+    }
+    
+    .container .bg-image-text h1{
+    color: aliceblue;
+    text-align: center;
+        margin-top: 10vh;
+}
+
+.container .bg-image-text h2{
+    
+}
+
+.container .bg-image-text p{
+    
+}
+
+
+    
+}
+
+
+@media only screen and (max-width : 572px){
+    
+    .container{
+        width:100%;
+    }
+    
+    .container .bg-image-text h1{
+display: none;
+        ;
+}
+
+.container .bg-image-text h2{
+    margin-top: 50vh
+}
+
+.container .bg-image-text p{
+    
+}
+
+
+    
+}
+
+
+.container-2{
+    height: 100%;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px;
+  text-align: center;    
+}
+
+.tabcontent p{
+    font-size: 2em;
+}
+
+
+#html {background-color: lightcoral;}
+#css {background-color: teal;}
+#js {background-color: darkseagreen;}
+#nosql {background-color: cadetblue;}
+
+
+
+@media only screen and (max-width: 768px){
+    
+
+    
+    .tabcontent {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;        
+
+  height: 100%;
+  text-align: center; 
+  justify-content: center;
+}
+    
+.tabcontent p{
+    font-size: 1.5em;
+}
+    
+}
+
+.image{
+    width: 100%;
+    background-image: url(img/bg-image.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+
+.experience {
+  display: flex;  
+  color: aliceblue;
+    font-family: serif;
+  flex-flow: row wrap;
+
+  text-align: center;
+    font-size: 2em;
+}
+
+.experience > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: lightcoral;
+      font-weight: bold;
+}
+
+.footer {
+  background: none;
+}
+
+.main {
+  text-align: center;
+  background: teal;
+    width: 50%;
+}
+
+ul{
+    list-style-type: square;
+
+
+}
+.aside-1 {
+  background: darkseagreen;
+}
+
+.aside-2 {
+  background: cadetblue;
+}
+
+@media all and (max-width: 600px) {
+  .main { flex: 1 auto; }
+}
+
+@media all and (max-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 2; } 
+  .main    { order: 1; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
